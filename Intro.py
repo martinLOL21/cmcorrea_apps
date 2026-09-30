@@ -66,22 +66,7 @@ st.markdown(dedent("""
        HERO
        ========================= */
 
-    .hero {
-        padding: 45px;
-
-        border-radius: 25px;
-
-        background:
-            linear-gradient(
-                135deg,
-                rgba(224, 93, 240, 0.16),
-                rgba(93, 121, 240, 0.12)
-            );
-
-        border: 1px solid rgba(192, 97, 250, 0.3);
-
-        margin-bottom: 30px;
-    }
+    
 
     .hero-label {
         display: inline-block;
