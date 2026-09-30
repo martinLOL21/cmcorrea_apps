@@ -326,7 +326,7 @@ apps = [
         "title": "Conversión de texto a voz",
         "category": "Audio · IA",
         "description": "Convierte texto escrito en voz utilizando modelos de Inteligencia Artificial.",
-        "image": "txt_to_audio2.png",
+        "image": "Mewing.png",
         "url": "https://iaolxrurxtue8evzceawxc.streamlit.app/"
     },
 
