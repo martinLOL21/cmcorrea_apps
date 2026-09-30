@@ -278,9 +278,7 @@ with st.sidebar:
 
     st.write(
         """
-        Esta plataforma reúne diferentes aplicaciones y
-        experimentos desarrollados utilizando técnicas de
-        Inteligencia Artificial.
+        Esta plataforma reúne diferentes gatos super inteligentes que le saben mucho de todo
         """
     )
 
