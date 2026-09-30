@@ -326,7 +326,7 @@ apps = [
         "title": "Conversión de texto a miaus",
         "category": "Audio · IA",
         "description": "Convierte texto escrito en voz utilizando modelos de Inteligencia Gatificial.",
-        "image": "Meowing.png",
+        "image": "Meowing.jpg",
         "url": "https://iaolxrurxtue8evzceawxc.streamlit.app/"
     },
 
