@@ -323,10 +323,10 @@ st.markdown(
 apps = [
 
     {
-        "title": "Conversión de texto a voz",
+        "title": "Conversión de texto a miaus",
         "category": "Audio · IA",
-        "description": "Convierte texto escrito en voz utilizando modelos de Inteligencia Artificial.",
-        "image": "Mewing.png",
+        "description": "Convierte texto escrito en voz utilizando modelos de Inteligencia Gatificial.",
+        "image": "Meowing.png",
         "url": "https://iaolxrurxtue8evzceawxc.streamlit.app/"
     },
 
