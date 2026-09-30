@@ -347,11 +347,11 @@ apps = [
     },
 
     {
-        "title": "Conversión de voz a texto",
+        "title": "Gato multilingue escribe y traduce tu voz",
         "category": "Audio · IA",
         "description": "Transforma una grabación de voz en texto utilizando reconocimiento automático.",
-        "image": "OIG8.jpg",
-        "url": "https://traductorw.streamlit.app/"
+        "image": "escucho.jpg",
+        "url": "https://traductor-uubufkpcjuyhmdhkiu9w34.streamlit.app/"
     },
 
     {
@@ -373,7 +373,7 @@ apps = [
     {
         "title": "Gato sabiondo",
         "category": "RAG · Documentos",
-        "description": "Consulta documentos PDF utilizando una aplicación basada en Retrieval Augmented Generation.",
+        "description": "Consulta documentos PDF utilizando al gato sabiondo.",
         "image": "gato.jpg",
         "url": "https://chatpdf1-pra6mueuxeefwd3ntynadu.streamlit.app//"
     },
