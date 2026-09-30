@@ -310,54 +310,6 @@ with st.sidebar:
 # =========================================================
 # HERO
 # =========================================================
-
-st.markdown(dedent("""
-<div class="hero">
-
-    <div class="hero-label">
-        LABORATORIO DE INTELIGENCIA ARTIFICIAL
-    </div>
-
-    <div class="main-title">
-        Explora las posibilidades de la IA
-    </div>
-
-    <div class="subtitle">
-        Una colección de aplicaciones y experimentos que
-        muestran diferentes formas en las que la Inteligencia
-        Artificial puede utilizarse para transformar texto,
-        imágenes, audio y datos.
-    </div>
-
-</div>
-"""), unsafe_allow_html=True)
-
-
-# =========================================================
-# RECURSOS
-# =========================================================
-
-st.markdown(dedent("""
-<div class="resource-box">
-
-    <div class="resource-title">
-        🌐 Explora más ejercicios
-    </div>
-
-    <div>
-        Encuentra páginas adicionales y ejercicios prácticos
-        relacionados con Inteligencia Artificial.
-    </div>
-
-</div>
-"""), unsafe_allow_html=True)
-
-st.link_button(
-    "Abrir colección de ejercicios →",
-    "https://sites.google.com/view/aplicacionesdeia/inicio"
-)
-
-
 # =========================================================
 # APLICACIONES
 # =========================================================
