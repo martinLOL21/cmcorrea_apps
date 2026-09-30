@@ -371,11 +371,11 @@ apps = [
     },
 
     {
-        "title": "Generación en contexto",
+        "title": "Gato sabiondo",
         "category": "RAG · Documentos",
         "description": "Consulta documentos PDF utilizando una aplicación basada en Retrieval Augmented Generation.",
-        "image": "Chat_pdf.png",
-        "url": "https://chatpdf-cc.streamlit.app/"
+        "image": "gato.jpg",
+        "url": "https://chatpdf1-pra6mueuxeefwd3ntynadu.streamlit.app//"
     },
 
     {
