@@ -270,7 +270,7 @@ st.markdown(dedent("""
 
 with st.sidebar:
 
-    st.markdown("## 🤖 IA LAB")
+    st.markdown("## 🤖 GATO LABORATORIO")
 
     st.markdown("---")
 
