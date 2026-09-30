@@ -350,7 +350,7 @@ apps = [
         "title": "Gato multilingue escribe y traduce tu voz",
         "category": "Audio · IA",
         "description": "Transforma una grabación de voz en texto utilizando reconocimiento automático.",
-        "image": "escucho.jpg",
+        "image": "Escucho.jpg",
         "url": "https://traductor-uubufkpcjuyhmdhkiu9w34.streamlit.app/"
     },
 
