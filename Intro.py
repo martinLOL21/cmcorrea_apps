@@ -327,7 +327,7 @@ apps = [
         "category": "Audio · IA",
         "description": "Convierte texto escrito en voz utilizando modelos de Inteligencia Artificial.",
         "image": "txt_to_audio2.png",
-        "url": "https://imultimod.streamlit.app/"
+        "url": "https://iaolxrurxtue8evzceawxc.streamlit.app/"
     },
 
     {
