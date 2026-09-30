@@ -68,25 +68,7 @@ st.markdown(dedent("""
 
     
 
-    .hero-label {
-        display: inline-block;
 
-        padding: 7px 15px;
-
-        border-radius: 50px;
-
-        background: rgba(109, 97, 250, 0.18);
-
-        color: #C061FA;
-
-        font-size: 13px;
-
-        font-weight: 700;
-
-        letter-spacing: 1px;
-
-        margin-bottom: 15px;
-    }
 
     .main-title {
         font-size: 48px;
