@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+from textwrap import dedent
 
 # =========================================================
 # CONFIGURACIÓN
@@ -11,14 +12,17 @@ st.set_page_config(
     layout="wide"
 )
 
+
 # =========================================================
 # CSS
 # =========================================================
 
-st.markdown("""
+st.markdown(dedent("""
 <style>
 
-    /* ---------- FONDO GENERAL ---------- */
+    /* =========================
+       FONDO
+       ========================= */
 
     .stApp {
         background:
@@ -33,10 +37,14 @@ st.markdown("""
                 transparent 30%
             ),
             #0D0B18;
+
         color: #F5F3FF;
     }
 
-    /* ---------- SIDEBAR ---------- */
+
+    /* =========================
+       SIDEBAR
+       ========================= */
 
     section[data-testid="stSidebar"] {
         background: linear-gradient(
@@ -44,6 +52,7 @@ st.markdown("""
             #17112B 0%,
             #100E1D 100%
         );
+
         border-right: 1px solid rgba(144, 100, 227, 0.25);
     }
 
@@ -52,11 +61,53 @@ st.markdown("""
         color: #E05DF0;
     }
 
-    /* ---------- TÍTULOS ---------- */
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero {
+        padding: 45px;
+
+        border-radius: 25px;
+
+        background:
+            linear-gradient(
+                135deg,
+                rgba(224, 93, 240, 0.16),
+                rgba(93, 121, 240, 0.12)
+            );
+
+        border: 1px solid rgba(192, 97, 250, 0.3);
+
+        margin-bottom: 30px;
+    }
+
+    .hero-label {
+        display: inline-block;
+
+        padding: 7px 15px;
+
+        border-radius: 50px;
+
+        background: rgba(109, 97, 250, 0.18);
+
+        color: #C061FA;
+
+        font-size: 13px;
+
+        font-weight: 700;
+
+        letter-spacing: 1px;
+
+        margin-bottom: 15px;
+    }
 
     .main-title {
         font-size: 48px;
+
         font-weight: 800;
+
         line-height: 1.1;
 
         background: linear-gradient(
@@ -68,92 +119,74 @@ st.markdown("""
         );
 
         -webkit-background-clip: text;
+
         -webkit-text-fill-color: transparent;
-
-        margin-bottom: 10px;
-    }
-
-    .subtitle {
-        color: #B9B4CC;
-        font-size: 18px;
-        max-width: 800px;
-        line-height: 1.6;
-    }
-
-    /* ---------- HERO ---------- */
-
-    .hero {
-        padding: 40px;
-        border-radius: 24px;
-
-        background:
-            linear-gradient(
-                135deg,
-                rgba(224, 93, 240, 0.16),
-                rgba(93, 121, 240, 0.12)
-            );
-
-        border: 1px solid rgba(192, 97, 250, 0.25);
-
-        margin-bottom: 35px;
-    }
-
-    .hero-label {
-        display: inline-block;
-
-        padding: 6px 14px;
-
-        border-radius: 50px;
-
-        background: rgba(109, 97, 250, 0.18);
-
-        color: #C061FA;
-
-        font-size: 13px;
-        font-weight: 700;
 
         margin-bottom: 15px;
     }
 
-    /* ---------- SECCIONES ---------- */
+    .subtitle {
+        color: #B9B4CC;
+
+        font-size: 18px;
+
+        max-width: 800px;
+
+        line-height: 1.6;
+    }
+
+
+    /* =========================
+       TÍTULOS
+       ========================= */
 
     .section-title {
-        font-size: 27px;
+        font-size: 28px;
+
         font-weight: 700;
+
         color: #F5F3FF;
 
-        margin-top: 25px;
+        margin-top: 30px;
+
         margin-bottom: 20px;
     }
 
-    /* ---------- TARJETAS ---------- */
 
-    .card {
-        background: rgba(25, 21, 43, 0.88);
+    /* =========================
+       TARJETAS
+       ========================= */
 
-        border: 1px solid rgba(144, 100, 227, 0.25);
+    div[data-testid="stVerticalBlockBorderWrapper"] {
+
+        background: rgba(25, 21, 43, 0.85);
+
+        border: 1px solid rgba(144, 100, 227, 0.30);
 
         border-radius: 20px;
 
-        padding: 20px;
-
-        margin-bottom: 25px;
-
-        min-height: 390px;
-
         transition: all 0.25s ease;
+
+        padding: 5px;
     }
 
-    .card:hover {
-        transform: translateY(-5px);
+    div[data-testid="stVerticalBlockBorderWrapper"]:hover {
 
-        border-color: rgba(192, 97, 250, 0.65);
+        border-color: rgba(192, 97, 250, 0.7);
 
         box-shadow:
-            0 12px 35px rgba(109, 97, 250, 0.18);
+            0 10px 35px rgba(109, 97, 250, 0.18);
+
+        transform: translateY(-3px);
     }
 
+
+    /* =========================
+       TEXTO DE LAS TARJETAS
+       ========================= */
+
     .card-category {
+
         color: #5D79F0;
 
         font-size: 12px;
@@ -164,66 +197,72 @@ st.markdown("""
 
         letter-spacing: 1px;
 
-        margin-bottom: 8px;
+        margin-top: 10px;
     }
 
     .card-title {
+
         color: #FFFFFF;
 
         font-size: 21px;
 
         font-weight: 700;
 
-        margin-bottom: 10px;
+        margin-top: 5px;
     }
 
     .card-description {
+
         color: #AAA5BC;
 
         font-size: 14px;
 
         line-height: 1.6;
+
+        min-height: 65px;
     }
 
-    /* ---------- BOTONES ---------- */
 
-    div.stButton > button {
+    /* =========================
+       BOTONES
+       ========================= */
 
-        width: 100%;
+    div.stButton > button,
+    div[data-testid="stLinkButton"] a {
 
-        border: none;
+        border-radius: 12px !important;
 
-        border-radius: 12px;
-
-        padding: 10px 20px;
+        border: none !important;
 
         background: linear-gradient(
             90deg,
             #9064E3,
             #6D61FA
-        );
+        ) !important;
 
-        color: white;
+        color: white !important;
 
-        font-weight: 700;
+        font-weight: 700 !important;
 
         transition: all 0.2s ease;
     }
 
-    div.stButton > button:hover {
+    div.stButton > button:hover,
+    div[data-testid="stLinkButton"] a:hover {
 
         background: linear-gradient(
             90deg,
             #E05DF0,
             #C061FA
-        );
+        ) !important;
 
         transform: translateY(-2px);
-
-        color: white;
     }
 
-    /* ---------- LINK PRINCIPAL ---------- */
+
+    /* =========================
+       RECURSOS
+       ========================= */
 
     .resource-box {
 
@@ -231,31 +270,31 @@ st.markdown("""
 
         border-radius: 18px;
 
-        background: linear-gradient(
-            135deg,
-            rgba(224, 93, 240, 0.10),
-            rgba(93, 121, 240, 0.10)
-        );
+        background:
+            linear-gradient(
+                135deg,
+                rgba(224, 93, 240, 0.10),
+                rgba(93, 121, 240, 0.10)
+            );
 
         border: 1px solid rgba(109, 97, 250, 0.3);
 
-        margin-bottom: 35px;
+        margin-bottom: 15px;
     }
 
     .resource-title {
-        font-size: 20px;
+
+        font-size: 21px;
+
         font-weight: 700;
+
         color: #C061FA;
-    }
 
-    /* ---------- DIVISOR ---------- */
-
-    hr {
-        border-color: rgba(144, 100, 227, 0.2);
+        margin-bottom: 8px;
     }
 
 </style>
-""", unsafe_allow_html=True)
+"""), unsafe_allow_html=True)
 
 
 # =========================================================
@@ -281,12 +320,18 @@ with st.sidebar:
     st.markdown("### ¿Qué encontrarás?")
 
     st.markdown("""
-    🔊 Texto y voz  
-    👁️ Visión artificial  
-    📊 Análisis de datos  
-    📝 Procesamiento de lenguaje  
-    🧠 Modelos de IA  
-    📄 RAG y documentos  
+    🔊 Texto y voz
+
+    👁️ Visión artificial
+
+    📊 Análisis de datos
+
+    📝 Procesamiento de lenguaje
+
+    🧠 Modelos de IA
+
+    📄 RAG y documentos
+
     ⚙️ Sistemas inteligentes
     """)
 
@@ -296,10 +341,10 @@ with st.sidebar:
 
 
 # =========================================================
-# ENCABEZADO
+# HERO
 # =========================================================
 
-st.markdown("""
+st.markdown(dedent("""
 <div class="hero">
 
     <div class="hero-label">
@@ -318,27 +363,27 @@ st.markdown("""
     </div>
 
 </div>
-""", unsafe_allow_html=True)
+"""), unsafe_allow_html=True)
 
 
 # =========================================================
 # RECURSOS
 # =========================================================
 
-st.markdown("""
+st.markdown(dedent("""
 <div class="resource-box">
 
     <div class="resource-title">
         🌐 Explora más ejercicios
     </div>
 
-    <p>
+    <div>
         Encuentra páginas adicionales y ejercicios prácticos
         relacionados con Inteligencia Artificial.
-    </p>
+    </div>
 
 </div>
-""", unsafe_allow_html=True)
+"""), unsafe_allow_html=True)
 
 st.link_button(
     "Abrir colección de ejercicios →",
@@ -347,8 +392,14 @@ st.link_button(
 
 
 # =========================================================
-# DATOS DE LAS APLICACIONES
+# APLICACIONES
 # =========================================================
+
+st.markdown(
+    '<div class="section-title">🚀 Aplicaciones disponibles</div>',
+    unsafe_allow_html=True
+)
+
 
 apps = [
 
@@ -427,68 +478,62 @@ apps = [
 
 
 # =========================================================
-# APLICACIONES
+# GENERAR TARJETAS
 # =========================================================
-
-st.markdown(
-    '<div class="section-title">🚀 Aplicaciones disponibles</div>',
-    unsafe_allow_html=True
-)
-
-
-# Crear filas de 3 tarjetas
 
 for i in range(0, len(apps), 3):
 
-    cols = st.columns(3)
+    columns = st.columns(3)
 
-    for j, col in enumerate(cols):
+    for j, app in enumerate(apps[i:i+3]):
 
-        if i + j >= len(apps):
-            break
+        with columns[j]:
 
-        app = apps[i + j]
+            # ESTA ES LA PARTE IMPORTANTE
+            # Ahora usamos un container real de Streamlit
 
-        with col:
+            with st.container(border=True):
 
-            st.markdown('<div class="card">', unsafe_allow_html=True)
+                # Imagen
+                try:
 
-            # Imagen
-            try:
-                image = Image.open(app["image"])
-                st.image(
-                    image,
+                    image = Image.open(app["image"])
+
+                    st.image(
+                        image,
+                        use_container_width=True
+                    )
+
+                except:
+
+                    st.warning(
+                        f"No se encontró la imagen: {app['image']}"
+                    )
+
+                # Categoría
+                st.markdown(
+                    f'<div class="card-category">{app["category"]}</div>',
+                    unsafe_allow_html=True
+                )
+
+                # Título
+                st.markdown(
+                    f'<div class="card-title">{app["title"]}</div>',
+                    unsafe_allow_html=True
+                )
+
+                # Descripción
+                st.markdown(
+                    f'<div class="card-description">{app["description"]}</div>',
+                    unsafe_allow_html=True
+                )
+
+                # Botón
+                st.link_button(
+                    "Explorar aplicación →",
+                    app["url"],
                     use_container_width=True
                 )
-            except:
-                st.warning(
-                    f"No se encontró: {app['image']}"
-                )
-
-            st.markdown(
-                f'<div class="card-category">{app["category"]}</div>',
-                unsafe_allow_html=True
-            )
-
-            st.markdown(
-                f'<div class="card-title">{app["title"]}</div>',
-                unsafe_allow_html=True
-            )
-
-            st.markdown(
-                f'<div class="card-description">{app["description"]}</div>',
-                unsafe_allow_html=True
-            )
-
-            st.markdown("<br>", unsafe_allow_html=True)
-
-            st.link_button(
-                "Explorar aplicación →",
-                app["url"],
-                use_container_width=True
-            )
-
-            st.markdown('</div>', unsafe_allow_html=True)
 
 
 # =========================================================
@@ -510,4 +555,3 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
