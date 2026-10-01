@@ -385,11 +385,11 @@ apps = [
     },
 
     {
-        "title": "Sistema ciberfísico",
+        "title": "Gato lector de sentimientos",
         "category": "IA · Mundo físico",
-        "description": "Experimenta con sistemas capaces de interactuar con información proveniente del mundo físico.",
-        "image": "OIG6.jpg",
-        "url": "https://vision2-gpt4o.streamlit.app/"
+        "description": "Este gato siente lo que sientes",
+        "image": "Sentimientos.jpg",
+        "url": "https://sentimento-m7zcn3udu8dytjzgmkuglw.streamlit.app/"
     }
 ]
 
