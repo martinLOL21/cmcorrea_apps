@@ -329,11 +329,11 @@ apps = [
     },
 
     {
-        "title": "Reconocimiento de objetos",
+        "title": "Reconocimiento de objetos con mirada felina",
         "category": "Visión artificial",
         "description": "Detecta y reconoce diferentes objetos presentes dentro de una imagen.",
-        "image": "txt_to_audio.png",
-        "url": "https://yolov5cmc.streamlit.app/"
+        "image": "Analisis.png",
+        "url": "https://tmq2ubj7plohcvehdqyrxg.streamlit.app/"
     },
 
     {
