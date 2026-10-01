@@ -359,6 +359,13 @@ apps = [
         "image": "gato.jpg",
         "url": "https://chatpdf1-pra6mueuxeefwd3ntynadu.streamlit.app//"
     },
+  {
+        "title": "Análisis de imagen",
+        "category": "Computer Vision",
+        "description": "Explora la capacidad de los modelos de IA para interpretar y analizar imágenes.",
+        "image": "Miro.jpg",
+        "url": "https://visionapp-zztkqkzpqxrkt8nvhqptbq.streamlit.app/#analisis-de-mirada-gatuna-de-imagen"
+    },
 
     {
         "title": "Gato lector de sentimientos",
