@@ -337,14 +337,6 @@ apps = [
     },
 
     {
-        "title": "Entrenando modelos",
-        "category": "Machine Learning",
-        "description": "Explora cómo utilizar un modelo entrenado para realizar tareas de reconocimiento.",
-        "image": "OIG5.jpg",
-        "url": "https://xn3pg24ztuv6fdiqon8qn3.streamlit.app/"
-    },
-
-    {
         "title": "Gato multilingue escribe y traduce tu voz",
         "category": "Audio · IA",
         "description": "Transforma una grabación de voz en texto utilizando reconocimiento automático.",
