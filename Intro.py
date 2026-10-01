@@ -332,7 +332,7 @@ apps = [
         "title": "Reconocimiento de objetos con mirada felina",
         "category": "Visión artificial",
         "description": "Detecta y reconoce diferentes objetos presentes dentro de una imagen.",
-        "image": "Analisis.png",
+        "image": "Analisis.jpg",
         "url": "https://tmq2ubj7plohcvehdqyrxg.streamlit.app/"
     },
 
