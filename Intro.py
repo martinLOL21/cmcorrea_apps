@@ -353,35 +353,11 @@ apps = [
     },
 
     {
-        "title": "Análisis de datos",
-        "category": "Datos · IA",
-        "description": "Analiza conjuntos de datos mediante herramientas y agentes basados en IA.",
-        "image": "data_analisis.png",
-        "url": "https://dataagente.streamlit.app/"
-    },
-
-    {
-        "title": "Transcriptor de audio y video",
-        "category": "Procesamiento de audio",
-        "description": "Obtén transcripciones de archivos de audio y video mediante modelos de reconocimiento.",
-        "image": "OIG3.jpg",
-        "url": "https://transcript-whisper.streamlit.app/"
-    },
-
-    {
         "title": "Gato sabiondo",
         "category": "RAG · Documentos",
         "description": "Consulta documentos PDF utilizando al gato sabiondo.",
         "image": "gato.jpg",
         "url": "https://chatpdf1-pra6mueuxeefwd3ntynadu.streamlit.app//"
-    },
-
-    {
-        "title": "Análisis de imagen",
-        "category": "Computer Vision",
-        "description": "Explora la capacidad de los modelos de IA para interpretar y analizar imágenes.",
-        "image": "Miro.jpg",
-        "url": "https://visionapp-zztkqkzpqxrkt8nvhqptbq.streamlit.app/#analisis-de-mirada-gatuna-de-imagen"
     },
 
     {
