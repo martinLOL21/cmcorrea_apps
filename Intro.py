@@ -380,8 +380,8 @@ apps = [
         "title": "Análisis de imagen",
         "category": "Computer Vision",
         "description": "Explora la capacidad de los modelos de IA para interpretar y analizar imágenes.",
-        "image": "OIG4.jpg",
-        "url": "https://vision2-gpt4o.streamlit.app/"
+        "image": "Miro.jpg",
+        "url": "https://visionapp-zztkqkzpqxrkt8nvhqptbq.streamlit.app/#analisis-de-mirada-gatuna-de-imagen"
     },
 
     {
