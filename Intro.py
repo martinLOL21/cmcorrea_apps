@@ -358,21 +358,20 @@ apps = [
         "image": "Miro.jpg",
         "url": "https://visionapp-zztkqkzpqxrkt8nvhqptbq.streamlit.app/#analisis-de-mirada-gatuna-de-imagen"
     },
-
     {
         "title": "Gato lector de sentimientos",
         "category": "IA · Mundo físico",
         "description": "Este gato siente lo que sientes",
         "image": "Sentimientos.jpg",
         "url": "https://sentimento-m7zcn3udu8dytjzgmkuglw.streamlit.app/"
-    }
+    },
     {
         "title": "Gato Robot mueve pata",
         "category": "IA · Mundo físico",
         "description": "Este gato controla circuitos",
         "image": "robot cat.png",
         "url": "https://sendcmqtt-cxtbnvlyrem8vdmuf6ssvs.streamlit.app/"
-    }
+    },
     {
         "title": "Sensor gatuno",
         "category": "IA · Mundo físico",
