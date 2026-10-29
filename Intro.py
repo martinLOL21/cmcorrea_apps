@@ -366,6 +366,20 @@ apps = [
         "image": "Sentimientos.jpg",
         "url": "https://sentimento-m7zcn3udu8dytjzgmkuglw.streamlit.app/"
     }
+    {
+        "title": "Gato Robot mueve pata",
+        "category": "IA · Mundo físico",
+        "description": "Este gato controla circuitos",
+        "image": "robot cat.png",
+        "url": "https://sendcmqtt-cxtbnvlyrem8vdmuf6ssvs.streamlit.app/"
+    }
+    {
+        "title": "Sensor gatuno",
+        "category": "IA · Mundo físico",
+        "description": "Este gato siente las variables",
+        "image": "gatosensor.jpg",
+        "url": "https://recepmqtt-crtomtybmcdbaeep2p2rnh.streamlit.app/"
+    }
 ]
 
 
