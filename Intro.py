@@ -321,6 +321,13 @@ st.markdown(
 apps = [
 
     {
+        "title": "Gato primigenio",
+        "category": "Testeo",
+        "description": "Un gato que aprende a ser una app.",
+        "image": "bb.jpg",
+        "url": "https://prueba0-9aucmwwierqlcdttjh92nu.streamlit.app/"
+    },
+    {
         "title": "Conversión de texto a miaus",
         "category": "Audio · IA",
         "description": "Convierte texto escrito en voz utilizando modelos de Inteligencia Gatificial.",
@@ -345,6 +352,34 @@ apps = [
     },
 
     {
+        "title": "Gato atento",
+        "category": "Reconocimiento de caracteres y audio",
+        "description": "Un gato que lee y escribe (2 en 1 :0).",
+        "image": "ojo.jpg",
+        "url": "https://ocr-audio-mowrdsystlhkbu8wnp3p4m.streamlit.app/"
+    },
+   {
+        "title": "Gato nuboso",
+        "category": "Gato con nubes de palabras",
+        "description": "Genera nubes de palabras para visualizar la frecuencia de de palabras claves.",
+        "image": "cloud.jpg",
+        "url": "https://wordcloud-373vsda7nssa25ct9h2vkr.streamlit.app/"
+    },
+       {
+        "title": "Gato lector y analizador",
+        "category": "Gato letrado",
+        "description": "Analiza el texto que le pases, bastante paciente.",
+        "image": "lee.jpg",
+        "url": "https://lv6epjfenvoicubsfqsdeb.streamlit.app/"
+    },
+    {
+        "title": "Gato cyborg",
+        "category": "Gato IA",
+        "description": "Con el poder de la IA identifica lo que le muestras.",
+        "image": "yolo.jpg",
+        "url": "https://yolov5-mszqk7zkmlqzijnivru4uf.streamlit.app/"
+    },
+    {
         "title": "Gato sabiondo",
         "category": "RAG · Documentos",
         "description": "Consulta documentos PDF utilizando al gato sabiondo.",
@@ -357,6 +392,13 @@ apps = [
         "description": "Explora la capacidad de los modelos de IA para interpretar y analizar imágenes.",
         "image": "Miro.jpg",
         "url": "https://visionapp-zztkqkzpqxrkt8nvhqptbq.streamlit.app/#analisis-de-mirada-gatuna-de-imagen"
+    },
+      {
+        "title": "Gato tablero",
+        "category": "herramienta tablero",
+        "description": "Gato equipado con un increible tablero.",
+        "image": "tablero.jpg",
+        "url": "https://tableromartin.streamlit.app/"
     },
     {
         "title": "Gato lector de sentimientos",
@@ -378,6 +420,13 @@ apps = [
         "description": "Este gato siente las variables",
         "image": "gatosensor.jpg",
         "url": "https://recepmqtt-crtomtybmcdbaeep2p2rnh.streamlit.app/"
+    }
+       {
+        "title": "Gato telefono",
+        "category": "Escucha control",
+        "description": "Este gato da ordenes con tu voz",
+        "image": "sing.jpg",
+        "url": "https://ctrlvoice-86mdj52mep8iksbiatodzf.streamlit.app/"
     }
 ]
 
