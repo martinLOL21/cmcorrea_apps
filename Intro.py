@@ -420,7 +420,7 @@ apps = [
         "description": "Este gato siente las variables",
         "image": "gatosensor.jpg",
         "url": "https://recepmqtt-crtomtybmcdbaeep2p2rnh.streamlit.app/"
-    }
+    },
        {
         "title": "Gato telefono",
         "category": "Escucha control",
